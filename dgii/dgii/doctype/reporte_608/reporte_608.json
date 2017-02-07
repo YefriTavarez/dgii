@@ -3,12 +3,13 @@
  "allow_import": 0, 
  "allow_rename": 0, 
  "beta": 0, 
- "creation": "2016-02-12 10:47:43.779882", 
+ "creation": "2017-01-05 00:50:11.269558", 
  "custom": 0, 
  "docstatus": 0, 
  "doctype": "DocType", 
  "document_type": "Document", 
  "editable_grid": 0, 
+ "engine": "InnoDB", 
  "fields": [
   {
    "allow_on_submit": 0, 
@@ -102,10 +103,10 @@
  "issingle": 1, 
  "istable": 0, 
  "max_attachments": 0, 
- "modified": "2017-01-02 19:39:12.183712", 
+ "modified": "2017-01-05 00:50:11.269558", 
  "modified_by": "Administrator", 
  "module": "DGII", 
- "name": "Reporte 606", 
+ "name": "Reporte 608", 
  "name_case": "", 
  "owner": "Administrator", 
  "permissions": [

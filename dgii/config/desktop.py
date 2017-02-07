@@ -6,7 +6,7 @@ def get_data():
 	return [
 		{
 			"module_name": "DGII",
-			"color": "#7CBA00",
+			"color": "#369",
 			"icon": "octicon octicon-flame",
 			"type": "module",
 			"label": _("DGII")

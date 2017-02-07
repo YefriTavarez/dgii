@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
+from . import __version__ as app_version
 
 app_name = "dgii"
 app_title = "DGII"
-app_publisher = "Soldeva, SRL"
-app_description = "Una aplicacion para la generacion de los reportes que son enviados a la Direccion General de Impuestos Internos en la Republica Dominicana."
+app_publisher = "ominicana.Soldeva, SRL"
+app_description = "Una aplicacion para la generacion de los reportes que son enviados a la Direccion General de Impuestos Internos en la Republica D"
 app_icon = "octicon octicon-flame"
-app_color = "#7CBA00"
+app_color = "#369"
 app_email = "servicios@soldeva.com"
-app_version = "0.0.1"
-app_license = "GNU General Public License"
+app_license = "MIT"
 
 # Includes in <head>
 # ------------------

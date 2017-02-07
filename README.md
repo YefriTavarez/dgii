@@ -1,7 +1,7 @@
 ## DGII
 
-Una aplicacion para la generacion de los reportes que son enviados a la Direccion General de Impuestos Internos en la Republica Dominicana.
+Una aplicacion para la generacion de los reportes que son enviados a la Direccion General de Impuestos Internos en la Republica D
 
 #### License
 
-GNU General Public License
+MIT# dgii
