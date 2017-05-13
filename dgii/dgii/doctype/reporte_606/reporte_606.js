@@ -1,9 +1,15 @@
-cur_frm.cscript.onload_post_render = function(doc, cdt, cdn) {
-	cur_frm.disable_save();
-	cur_frm.toolbar.print_icon.addClass("hide");
-}
+frappe.ui.form.on("Reporte 606", {
+    onload: function(frm) {
+       frm.doc.from_date = frappe.datetime.month_start();
+       frm.doc.to_date = frappe.datetime.month_end();
+	   cur_frm.disable_save();
+    },
 
-cur_frm.cscript.run_report = function(doc){
-	document.location = "/api/method/dgii.dgii.doctype.reporte_606.reporte_606.get_file_address?from_date=" 
-		+ doc.from_date + "&to_date=" + doc.to_date;	
-}
+	run_report: function(frm){
+		var url = "/api/method/dgii.dgii.doctype.reporte_606.reporte_606.get_file_address?from_date=" 
+			+ frm.doc.from_date + "&to_date=" + frm.doc.to_date;
+
+		window.open(url);
+	}
+});
+
