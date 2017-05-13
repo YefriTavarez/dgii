@@ -4,4 +4,5 @@ Una aplicacion para la generacion de los reportes que son enviados a la Direccio
 
 #### License
 
-MIT
+General Public License, V3
+
