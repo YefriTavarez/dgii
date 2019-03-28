@@ -11,6 +11,41 @@ app_color = "#469"
 app_email = "servicios@soldeva.com"
 app_license = "MIT"
 
+
+# Fixtures
+# --------
+
+fixtures = [
+	{
+		"doctype": "Custom Field",
+		"filters": {
+			"name": (
+				"in", (
+					"Purchase Invoice-total_itbis",
+					"Purchase Invoice Item-item_type",
+					"Purchase Invoice-legal_tip",
+					"Purchase Invoice-other_taxes",
+					"Purchase Invoice-excise_tax",
+					"Purchase Invoice-include_isr",
+					"Purchase Invoice-isr_amount",
+					"Purchase Invoice-isr_rate",
+					"Purchase Invoice-include_retention",
+					"Purchase Invoice-retention_amount",
+					"Purchase Invoice-retention_rate",
+					"Purchase Invoice-monto_facturado_servicios",
+					"Purchase Invoice-monto_facturado_bienes",
+					"Sales Taxes and Charges-tax_type",
+					"Item-item_type",
+					"Purchase Invoice-tipo_bienes_y_servicios_comprados",
+					"Supplier-tipo_rnc",
+					"Customer-tipo_rnc",
+					"Purchase Invoice-tax_id",
+				)
+			)
+		}
+	}	
+]
+
 # Includes in <head>
 # ------------------
 
@@ -70,13 +105,11 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	"Purchase Invoice": {
+		"validate": "dgii.hook.purchase_invoice.validate",
+	}
+}
 
 # Scheduled Tasks
 # ---------------

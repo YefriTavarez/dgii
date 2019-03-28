@@ -13,17 +13,15 @@ class Reporte608(Document):
 	pass
 
 @frappe.whitelist()
-def get_file_address(from_date,to_date):
+def get_file_address(from_date, to_date):
 
 	result = frappe.db.sql(
-		query = """SELECT name, posting_date, tipo_de_anulacion 
+		query = """SELECT ncf, posting_date, tipo_de_anulacion 
 			FROM `tabSales Invoice` 
-			WHERE name LIKE '%(pattern)s' 
-			AND docstatus = %(cancelled)s 
+			WHERE docstatus = %(cancelled)s 
 			AND posting_date >= '%(from_date)s' 
 			AND posting_date <= '%(to_date)s'""" % 
 		{ 
-			"pattern" : "%A01%",
 			"cancelled": 2,
 			"from_date": from_date,
 			"to_date": to_date
@@ -48,7 +46,7 @@ def get_file_address(from_date,to_date):
 		date  = str(row.posting_date).split("-")[2]
 
 		w.writerow([
-			row.name,
+			row.ncf,
 			"",
 			year + month + date,
 			row.tipo_de_anulacion,
