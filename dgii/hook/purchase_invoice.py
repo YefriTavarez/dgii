@@ -60,7 +60,6 @@ def set_taxes(doc):
 	if conf.other_taxes:
 		for tax in conf.other_taxes:
 			total_amount = .000
-			print("checking {} on {}".format(tax.account, doc.name))
 			total_amount = sum( 
 				[ row.tax_amount_after_discount_amount for row in filter(
 						lambda x: x.account_head == tax.account,
