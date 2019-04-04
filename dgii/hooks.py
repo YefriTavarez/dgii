@@ -34,6 +34,8 @@ fixtures = [
 					"Purchase Invoice-retention_rate",
 					"Purchase Invoice-monto_facturado_servicios",
 					"Purchase Invoice-monto_facturado_bienes",
+					"Sales Invoice-ncf",
+					"Sales Invoice-tipo_de_anulacion",
 					"Sales Taxes and Charges-tax_type",
 					"Item-item_type",
 					"Purchase Invoice-tipo_bienes_y_servicios_comprados",
