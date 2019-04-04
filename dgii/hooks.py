@@ -71,6 +71,13 @@ fixtures = [
 # Website user home page (by function)
 # get_website_user_home_page = "dgii.utils.get_home_page"
 
+# Doctype JS
+# ----------
+doctype_js = {
+	"Purchase Invoice": "public/js/purchase_invoice.js",
+	"Customer": "public/js/customer.js",
+}
+
 # Generators
 # ----------
 
